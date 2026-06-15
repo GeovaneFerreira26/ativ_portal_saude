@@ -1,7 +1,7 @@
+import { Link } from 'react-router-dom'; // Importa o componente de navegação do React Router
 import './style.css';
 
 export default function Footer() {
-
     return (
         <footer className="footer-container">
             {/* Parte Principal do Rodapé: Organizada em Colunas */}
@@ -14,21 +14,23 @@ export default function Footer() {
                         Sua saúde em boas mãos. Oferecemos atendimento médico de excelência com profissionais qualificados e infraestrutura moderna.
                     </p>
                     <div className="footer-socials">
-                        <a href="#instagram" aria-label="Instagram">Instagram</a>
-                        <a href="#facebook" aria-label="Facebook">Facebook</a>
-                        <a href="#linkedin" aria-label="LinkedIn">LinkedIn</a>
+                        {/* Links externos continuam usando a tag <a> padrão */}
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">Instagram</a>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">Facebook</a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
                     </div>
                 </div>
 
-                {/* Coluna 2: Links Úteis / Navegação */}
+                {/* Coluna 2: Links Úteis / Navegação Conectada */}
                 <div className="footer-column">
                     <h4 className="footer-section-title">Links Úteis</h4>
                     <ul className="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#quem-somos">Quem Somos</a></li>
-                        <li><a href="#servicos">Serviços</a></li>
-                        <li><a href="#corpo-clinico">Corpo Clínico</a></li>
-                        <li><a href="#blog">Blog da Saúde</a></li>
+                        {/* Mudamos de <a> href para <Link> to conectando com as suas páginas */}
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/quem-somos">Quem Somos</Link></li>
+                        <li><Link to="/servicos">Serviços</Link></li>
+                        <li><Link to="/corpo-clinico">Corpo Clínico</Link></li>
+                        <li><Link to="/blog">Blog da Saúde</Link></li>
                     </ul>
                 </div>
 
@@ -65,8 +67,8 @@ export default function Footer() {
             {/* Parte Inferior: Créditos, Direitos e Políticas */}
             <div className="footer-bottom">
                 <div className="footer-legal">
-                    <a href="#privacidade">Política de Privacidade</a>
-                    <a href="#termos">Termos de Uso</a>
+                    <Link to="/privacidade">Política de Privacidade</Link>
+                    <Link to="/termos">Termos de Uso</Link>
                 </div>
                 <div className="footer-credits">
                     <p className='footer-title'>Desenvolvido por Bruno Rosa e Geovane Ferreira</p>
