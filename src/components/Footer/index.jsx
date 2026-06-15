@@ -52,7 +52,7 @@ export default function Footer() {
                         <strong>Ambulatório:</strong> Seg a Sex, das 07h às 19h.
                     </p>
                     <p className="footer-text address">
-                        Av. Orlando Gomes, 1845 - Piatã, Salvador - BA
+                        Av. Dendezeiros do Bonfim, 99, Salvador - BA
                     </p>
                 </div>
 
