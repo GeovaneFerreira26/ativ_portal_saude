@@ -16,7 +16,7 @@ export default function Navbar() {
         {/* Lado Esquerdo: Logo */}
         <div className="navbar-logo">
           <span className="logo-icon">➕</span>
-          <span className="logo-text">Portal<span className="text-highlight">SaúdeSenai</span></span>
+          <span className="logo-text">Portal<span className="text-highlight">Saúde Senai</span></span>
         </div>
 
         {/* Lado Direito: Agrupa os links e o botão juntos na ponta direita */}

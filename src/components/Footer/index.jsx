@@ -1,6 +1,7 @@
 import './style.css';
 
 export default function Footer() {
+
     return (
         <footer className="footer-container">
             {/* Parte Principal do Rodapé: Organizada em Colunas */}
@@ -25,7 +26,7 @@ export default function Footer() {
                     <ul className="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#quem-somos">Quem Somos</a></li>
-                        <li><a href="#servicos">Serviços e Procedimentos</a></li>
+                        <li><a href="#servicos">Serviços</a></li>
                         <li><a href="#corpo-clinico">Corpo Clínico</a></li>
                         <li><a href="#blog">Blog da Saúde</a></li>
                     </ul>
