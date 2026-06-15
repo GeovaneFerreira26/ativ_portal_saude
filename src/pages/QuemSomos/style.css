@@ -11,7 +11,6 @@
 /* Seção de Destaque / Banner Inicial */
 .quemsomos-hero {
     width: 100%;
-    background-linear-gradient: 135deg, #0076b6 0%, #005a8c 100%;
     background-color: #0076b6; /* Cor base da sua identidade */
     color: #ffffff;
     text-align: center;
