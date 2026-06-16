@@ -249,3 +249,143 @@ code {
         font-size: 1rem;
     }
 }
+
+
+/* style.css da página Corpo Clínico */
+
+.corpoclinico-container {
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção Hero / Banner superior */
+.corpoclinico-hero {
+    width: 100%;
+    background-color: #0076b6; /* Azul identidade */
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid #00a3d4;
+}
+
+.corpoclinico-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.corpoclinico-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Área do Grid */
+.corpoclinico-grid-wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 60px 20px;
+}
+
+.corpoclinico-grid {
+    display: grid;
+    /* auto-fit cria colunas dinâmicas automáticas dependendo da largura da tela */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+/* Estilo do Card individual */
+.medico-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-top: 4px solid transparent;
+}
+
+/* Efeito de destaque discreto ao passar o mouse */
+.medico-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-top-color: #00a3d4; /* Destaca com o azul claro do botão */
+}
+
+/* Avatar substituto de foto (Iniciais) */
+.medico-avatar {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(0, 118, 182, 0.1); /* Fundo azul bem suave */
+    border: 2px solid #0076b6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.medico-avatar span {
+    color: #0076b6;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Informações internas do card */
+.medico-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.medico-especialidade {
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #00a3d4; /* Azul de destaque secundário */
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.medico-nome {
+    font-size: 1.25rem;
+    color: #333333;
+    margin: 0 0 4px 0;
+    font-weight: 600;
+}
+
+.medico-crm {
+    font-size: 0.85rem;
+    color: #888888;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.medico-descricao {
+    font-size: 0.9rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 600px) {
+    .corpoclinico-hero h1 {
+        font-size: 2rem;
+    }
+    .corpoclinico-hero p {
+        font-size: 1rem;
+    }
+    .corpoclinico-grid {
+        grid-template-columns: 1fr; /* Coluna única no celular */
+    }
+}
