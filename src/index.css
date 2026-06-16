@@ -109,3 +109,143 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+
+
+/* style.css da página Quem Somos */
+
+.quemsomos-container {
+    width: 100%;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Seção de Destaque / Banner Inicial */
+.quemsomos-hero {
+    width: 100%;
+    background-color: #0076b6; /* Cor base da sua identidade */
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid #00a3d4; /* Detalhe em azul claro */
+}
+
+.quemsomos-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.quemsomos-hero p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Área de Conteúdo Dividida */
+.quemsomos-content {
+    max-width: 1200px;
+    width: 100%;
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* História ganha mais espaço que o painel lateral */
+    gap: 50px;
+}
+
+/* Bloco da História */
+.quemsomos-story h2 {
+    color: #0076b6;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.quemsomos-story h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: #00a3d4;
+}
+
+.quemsomos-story p {
+    font-size: 1.05rem;
+    color: #333333;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.quemsomos-story strong {
+    color: #0076b6;
+}
+
+/* Painel de Missão, Visão e Valores (Cards) */
+.quemsomos-mvv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mvv-box {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #0076b6; /* Borda estilizada com a cor institucional */
+}
+
+.mvv-box:nth-child(2) {
+    border-left-color: #00a3d4; /* Muda a cor da borda da "Visão" para o azul claro */
+}
+
+.mvv-box h3 {
+    color: #333333;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.mvv-box p {
+    font-size: 0.95rem;
+    color: #666666;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.mvv-box ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.mvv-box ul li {
+    font-size: 0.95rem;
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+.mvv-box ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsividade para Dispositivos Móveis */
+@media (max-width: 900px) {
+    .quemsomos-content {
+        grid-template-columns: 1fr; /* Empilha a história e os cards em telas menores */
+        gap: 40px;
+    }
+
+    .quemsomos-hero h1 {
+        font-size: 2rem;
+    }
+
+    .quemsomos-hero p {
+        font-size: 1rem;
+    }
+}
